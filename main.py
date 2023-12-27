@@ -9,7 +9,7 @@ model = MusicGen.get_pretrained('facebook/musicgen-medium')
 model.set_generation_params(duration=10)  # generate 10 seconds
 
 # Step 3: Generate the audio sample based on the description
-description = ['Pad in A major']
+description = ['Pad in A major, one chord, ambient, ethereal, no melody']
 wav = model.generate(description)
 
 # Step 4: Save the generated audio
